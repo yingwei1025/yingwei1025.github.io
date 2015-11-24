@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Calculator BY YW</title>
+<style type="text/css">
+body{
+	font-family: verdana;
+}
+h1,h2{
+	text-align: center;
+	color:white;
+}
+
+
+table{
+	border-spacing: 30px;
+	font-size: 30px;
+}
+
+tr{
+	text-align: center;
+	
+}
+
+input{
+	font-size: 30px;
+	text-align: center;
+}
+</style>
+
+</head>	
+<body>
+
+	<div style="background-color:#FF6600">
+		<br/>
+			<h1>Noob calculator by YW</h1>
+		<br/>
+	</div>
+
+	<div style="background-color:#FF6666">
+		<br/>
+			<h2>Can only calculate simple task</h2>
+			<br/>
+	</div>
+
+	<div style="background-color:#FF66CC">
+		<br/>
+			<h2>Simply input 2 number in both different box</h2>
+			<br/>
+	</div>
+
+
+	<table align="center">
+		
+	<form>
+		<tr style="background-color:#FF6633">
+<td><input id="a" type="text"/></td>
+<td><input id="b" type="text"/></td>
+		</tr>
+
+		<tr>
+
+<td><input type="button" onclick="sum()" value=" + "/></td>
+<td><input type="button" onclick="minus()" value=" - "/></td>
+		</tr>
+
+		<tr>
+<td ><input type="button" onclick="multi()" value=" x "/></td>
+<td><input type="button" onclick="div()" value=" ÷ "/></td>
+		</tr>
+
+		<tr>
+<td><input type="button" onclick="re()" value=" % "/></td>
+<td><input type="reset" value="Reset"/>
+		</tr>
+</form>
+</table>
+
+
+<script type="text/javascript">
+var a,b,result;
+
+function setValue()
+{
+	a= Number(document.getElementById('a').value);
+	b= Number(document.getElementById('b').value);
+}
+
+function sum(){
+	setValue();
+	result=a+b;
+	alert(result);
+}
+
+function minus(){
+	setValue();
+	result=a-b;
+	alert(result);
+}
+
+function multi(){
+	setValue();
+	result=a*b;
+	alert(result);
+}
+
+function div(){
+	setValue();
+	result=a/b;
+	alert(result);
+}
+
+function re(){
+	setValue();
+	result=a%b;
+	alert(result);
+}
+
+
+</script>
+
+
+</body>
+</html>
